@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock and Stop Watch</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <section class="digital-section">
+        <div class="main-box">
+          <div class="inner-box">
+            <div class="content-area">
+              <span>HTML, CSS AND JAVASCRIPT</span>
+              <h1 id="main-heading"></h1>
+            </div>
+      
+            <div class="clock-box">
+              <div id="clock" class="clock demo animated hidden"></div>
+              <div id="stopwatch" class="clock demo animated hidden">00 : 00 : 00</div>
+              <div class="digital-clock" id="digital-clock">
+                <button onClick="startDigitalClock()">Start</button>
+                <button onClick="stopDigitalClock()">Stop</button>
+              </div>
+              <div class="digital-clock hidden" id="shop-watch">
+                <button onClick="startStopWatch()">Start</button>
+                <button onClick="stopStopWatch()">Stop</button>
+                <button onClick="resetStpWatch()">Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="outer-btns">
+          <button onclick="showDigitalClock()">Clock</button>
+          <button onclick="showStopWatch()">Stop Watch</button>
+        </div>
+      </section>
+      
+      <section class="todo-section">
+        <div class="todo-list">
+          <h1>Todo List</h1>
+        </div>
+        <form onsubmit="addItem()">
+          <input type="text" id="additem">
+          <button type="submit" id="btnForm"></button>
+        </form>
+      
+        <div id="container"></div>
+      </section>
+      <script src="assets/main.js"></script>
+    
+</body>
+</html>
